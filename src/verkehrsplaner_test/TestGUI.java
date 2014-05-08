@@ -53,7 +53,7 @@ public class TestGUI extends javax.swing.JFrame {
 
         jScrollPane2.setViewportView(jPanel2);
 
-        jPanel3.setPreferredSize(new java.awt.Dimension(2000, 20000));
+        jPanel3.setPreferredSize(new java.awt.Dimension(2000, 2000));
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -63,7 +63,7 @@ public class TestGUI extends javax.swing.JFrame {
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 20000, Short.MAX_VALUE)
+            .addGap(0, 2000, Short.MAX_VALUE)
         );
 
         jScrollPane3.setViewportView(jPanel3);
@@ -80,8 +80,8 @@ public class TestGUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 766, Short.MAX_VALUE)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 597, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 597, Short.MAX_VALUE)
         );
 
         pack();
