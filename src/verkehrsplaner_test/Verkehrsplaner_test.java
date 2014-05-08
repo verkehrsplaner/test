@@ -12,6 +12,7 @@ public class Verkehrsplaner_test {
         System.out.println("Test!");
         System.out.println("Test! Test!");
         System.out.println("MUIHAHAHA ES GEEEHT");
+        System.out.println("ES GEHT WIRKLICH!!!!");
         JFrame f = new TestGUI();
         f.setVisible(true);
     }
