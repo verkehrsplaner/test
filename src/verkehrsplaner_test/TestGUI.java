@@ -6,6 +6,8 @@
 
 package verkehrsplaner_test;
 
+import java.awt.Graphics;
+
 /**
  *
  * @author Developer
@@ -122,10 +124,17 @@ public class TestGUI extends javax.swing.JFrame {
         });
     }
 
+
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     // End of variables declaration//GEN-END:variables
+
+    public void paint(Graphics malen){
+        malen.drawRect(100, 100, 30, 30);
+    }
 }
+
