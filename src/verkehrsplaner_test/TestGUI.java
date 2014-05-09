@@ -134,6 +134,7 @@ public class TestGUI extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     public void paint(Graphics malen){
+        super.paint(malen);
         malen.drawRect(100, 100, 30, 30);
     }
 }
