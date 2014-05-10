@@ -79,6 +79,9 @@
               <Dimension value="[2000, 2000]"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new TestPanel();"/>
+          </AuxValues>
 
           <Layout>
             <DimensionLayout dim="0">
