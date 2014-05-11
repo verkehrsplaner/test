@@ -31,6 +31,8 @@ public class TestPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        setOpaque(false);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -49,7 +51,6 @@ public class TestPanel extends javax.swing.JPanel {
     @Override
      public void paintComponent(Graphics g){
         Graphics2D g2d = (Graphics2D)g;
-        this.setOpaque(false);
         g2d.drawRect(100, 100, 30, 30);
     }
 }
