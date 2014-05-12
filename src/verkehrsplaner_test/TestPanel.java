@@ -53,6 +53,7 @@ public class TestPanel extends javax.swing.JPanel {
     @Override
      public void paintComponent(Graphics g){
         Graphics2D g2d = (Graphics2D)g;
+        // Häuser
         g2d.setColor(Color.RED);
         g2d.setStroke(new BasicStroke(1));
         g2d.fillRect(100, 100, 30, 30);
@@ -83,18 +84,29 @@ public class TestPanel extends javax.swing.JPanel {
         g2d.setColor(Color.YELLOW);
         g2d.setStroke(new BasicStroke(3));
         g2d.drawRect(100, 160, 30, 30);
+        // Park
         g2d.setColor(new Color(0x0D, 0x9E, 0x11));
         g2d.setStroke(new BasicStroke(1));
         g2d.fillRect(130, 130, 30, 30);
         g2d.setColor(Color.YELLOW);
         g2d.setStroke(new BasicStroke(3));
         g2d.drawRect(130, 130, 30, 30);
-        //Bahnhof
+        // Linie
+        g2d.setColor(Color.MAGENTA);
+        g2d.setStroke(new BasicStroke(5));
+        g2d.drawLine(130, 130, 340, 220);
+        // Bahnhöfe
         g2d.setColor(Color.WHITE);
         g2d.setStroke(new BasicStroke(1));
         g2d.fillOval(115, 115, 30, 30);
         g2d.setColor(Color.BLACK);
         g2d.setStroke(new BasicStroke(3));
         g2d.drawOval(115, 115, 30, 30);
+        g2d.setColor(Color.WHITE);
+        g2d.setStroke(new BasicStroke(1));
+        g2d.fillOval(325, 205, 30, 30);
+        g2d.setColor(Color.BLACK);
+        g2d.setStroke(new BasicStroke(3));
+        g2d.drawOval(325, 205, 30, 30);
     }
 }
