@@ -65,5 +65,29 @@ public class TestPanel extends javax.swing.JPanel {
         g2d.setColor(Color.YELLOW);
         g2d.setStroke(new BasicStroke(3));
         g2d.drawRect(130, 100, 30, 30);
+        g2d.setColor(Color.RED);
+        g2d.setStroke(new BasicStroke(1));
+        g2d.fillRect(160, 100, 30, 30);
+        g2d.setColor(Color.YELLOW);
+        g2d.setStroke(new BasicStroke(3));
+        g2d.drawRect(160, 100, 30, 30);
+        g2d.setColor(Color.RED);
+        g2d.setStroke(new BasicStroke(1));
+        g2d.fillRect(100, 130, 30, 30);
+        g2d.setColor(Color.YELLOW);
+        g2d.setStroke(new BasicStroke(3));
+        g2d.drawRect(100, 130, 30, 30);
+        g2d.setColor(Color.RED);
+        g2d.setStroke(new BasicStroke(1));
+        g2d.fillRect(100, 160, 30, 30);
+        g2d.setColor(Color.YELLOW);
+        g2d.setStroke(new BasicStroke(3));
+        g2d.drawRect(100, 160, 30, 30);
+        g2d.setColor(new Color(0x0D, 0x9E, 0x11));
+        g2d.setStroke(new BasicStroke(1));
+        g2d.fillRect(130, 130, 30, 30);
+        g2d.setColor(Color.YELLOW);
+        g2d.setStroke(new BasicStroke(3));
+        g2d.drawRect(130, 130, 30, 30);
     }
 }
