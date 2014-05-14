@@ -95,13 +95,17 @@ public class TestPanel extends javax.swing.JPanel {
         g2d.setColor(Color.MAGENTA);
         g2d.setStroke(new BasicStroke(5));
         g2d.drawLine(130, 130, 340, 220);
+        g2d.setColor(Color.BLUE);
+        g2d.setStroke(new BasicStroke(5));
+        g2d.drawLine(340, 130, 130, 220);
         // Bahnhöfe
         g2d.setColor(Color.WHITE);
         g2d.setStroke(new BasicStroke(1));
-        g2d.fillOval(115, 115, 30, 30);
+        g2d.fillOval(120, 120, 20, 20);
         g2d.setColor(Color.BLACK);
-        g2d.setStroke(new BasicStroke(3));
-        g2d.drawOval(115, 115, 30, 30);
+        g2d.setStroke(new BasicStroke(2));
+        g2d.drawOval(120, 120, 20, 20);
+        
         g2d.setColor(Color.WHITE);
         g2d.setStroke(new BasicStroke(1));
         g2d.fillOval(325, 205, 30, 30);
