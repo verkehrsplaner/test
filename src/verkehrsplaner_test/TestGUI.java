@@ -5,10 +5,14 @@
  */
 package verkehrsplaner_test;
 
+import com.apple.eawt.Application;
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Timer;
 import java.util.TimerTask;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -36,6 +40,13 @@ public class TestGUI extends javax.swing.JFrame {
                 jLabel1.setText(format.format(Calendar.getInstance().getTime()));
             }
         }, 1000, 1000);
+        
+        //Seticon
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
+        Application application = Application.getApplication();
+        Image image = Toolkit.getDefaultToolkit().getImage("icon.png");
+        application.setDockIconImage(image);
+        Application.getApplication().setDockIconImage(new ImageIcon("icon.png").getImage());
     }
 
     /**
@@ -162,7 +173,7 @@ public class TestGUI extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         System.out.println("Button 3 wurde gedrückt!");
-        JOptionPane.showMessageDialog(null, "Du hast es gewagt, den 'Drück mich nicht' Knopf zu schließen..", "NANANA", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Du hast es gewagt, den 'Drück mich nicht' Knopf zu drücken..", "NANANA", JOptionPane.ERROR_MESSAGE);
         System.exit(1);
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -177,4 +188,6 @@ public class TestGUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     // End of variables declaration//GEN-END:variables
+
+  
 }
