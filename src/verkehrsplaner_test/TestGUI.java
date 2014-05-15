@@ -7,6 +7,8 @@
 package verkehrsplaner_test;
 
 import java.awt.Graphics;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  *
@@ -21,6 +23,9 @@ public class TestGUI extends javax.swing.JFrame {
         initComponents();
         jScrollPane3.getVerticalScrollBar().setUnitIncrement(10);
         jScrollPane3.getHorizontalScrollBar().setUnitIncrement(10);
+        SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
+        jLabel1.setText(format.format(Calendar.getInstance().getTime()));
+   
     }
 
     /**
