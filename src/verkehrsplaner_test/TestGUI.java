@@ -5,7 +5,6 @@
  */
 package verkehrsplaner_test;
 
-import java.awt.Graphics;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Timer;
@@ -18,7 +17,8 @@ import java.util.TimerTask;
 public class TestGUI extends javax.swing.JFrame {
 
     /**
-     * Creates new form TestGUI
+     * Erstellt das Fenster.
+     * Zusätzlich wird ein Timer initialisert, welcher die Uhrzeit automatisch aktualisiert.
      */
     public TestGUI() {
         initComponents();
@@ -27,10 +27,12 @@ public class TestGUI extends javax.swing.JFrame {
         final SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss"); //Erstellt neuen "Kalender"
         jLabel1.setText(format.format(Calendar.getInstance().getTime()));
 
+        //Timer für Uhrzeit
         Timer t = new Timer();
         t.scheduleAtFixedRate(new TimerTask() {
+            @Override
             public void run() {
-                jLabel1.setText(format.format(Calendar.getInstance().getTime())); //Uhrzeit automatisch aktualisieren
+                jLabel1.setText(format.format(Calendar.getInstance().getTime()));
             }
         }, 1000, 1000);
     }
