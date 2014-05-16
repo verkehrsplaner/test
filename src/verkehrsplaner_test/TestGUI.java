@@ -44,8 +44,8 @@ public class TestGUI extends javax.swing.JFrame {
 //        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
         
 //        oder
-//        ImageIcon icon = new ImageIcon(getClass().getResource("icon.png"));
-//        setIconImage(icon.getImage());
+        ImageIcon icon = new ImageIcon(getClass().getResource("icon.png"));
+        setIconImage(icon.getImage());
     }
 
     /**
