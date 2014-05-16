@@ -5,7 +5,6 @@
  */
 package verkehrsplaner_test;
 
-import com.apple.eawt.Application;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.text.SimpleDateFormat;
@@ -41,12 +40,12 @@ public class TestGUI extends javax.swing.JFrame {
             }
         }, 1000, 1000);
         
-        //Seticon
-        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
-        Application application = Application.getApplication();
-        Image image = Toolkit.getDefaultToolkit().getImage("icon.png");
-        application.setDockIconImage(image);
-        Application.getApplication().setDockIconImage(new ImageIcon("icon.png").getImage());
+        //Seticon entweder
+//        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("icon.png")));
+        
+//        oder
+//        ImageIcon icon = new ImageIcon(getClass().getResource("icon.png"));
+//        setIconImage(icon.getImage());
     }
 
     /**
@@ -174,7 +173,7 @@ public class TestGUI extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         System.out.println("Button 3 wurde gedrückt!");
         JOptionPane.showMessageDialog(null, "Du hast es gewagt, den 'Drück mich nicht' Knopf zu drücken..", "NANANA", JOptionPane.ERROR_MESSAGE);
-        System.exit(1);
+        System.exit(0);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     
