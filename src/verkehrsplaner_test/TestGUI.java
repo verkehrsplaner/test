@@ -119,7 +119,7 @@ public class TestGUI extends javax.swing.JFrame {
 
         jButton3.setText("Drück mich nicht!");
         jButton3.setToolTipText("Sicher dass du diesen Knopf drücken willst?");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
