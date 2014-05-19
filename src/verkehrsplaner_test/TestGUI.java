@@ -6,8 +6,6 @@
  */
 package verkehrsplaner_test;
 
-import java.awt.Image;
-import java.awt.Toolkit;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Timer;
@@ -70,6 +68,7 @@ public class TestGUI extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator4 = new javax.swing.JSeparator();
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TestGUI");
@@ -110,7 +109,7 @@ public class TestGUI extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("18:37");
 
-        jButton2.setText("Zug reperieren!");
+        jButton2.setText("Zug reparieren!");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -127,10 +126,29 @@ public class TestGUI extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton4.setText("+");
+        jButton4.setText("-");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton5.setText("-");
+        jButton5.setText("+");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jButton6.setText("Musik an/aus");
+        jButton6.setToolTipText("Sicher dass du diesen Knopf drücken willst?");
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -151,7 +169,8 @@ public class TestGUI extends javax.swing.JFrame {
                     .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jSeparator2)
                     .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jSeparator4))
+                    .addComponent(jSeparator4)
+                    .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -170,13 +189,15 @@ public class TestGUI extends javax.swing.JFrame {
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(30, 30, 30)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton6)
+                .addGap(4, 4, 4)
                 .addComponent(jButton3)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -185,15 +206,30 @@ public class TestGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        System.out.println("Button 2 wurde gedrückt!");
-        JOptionPane.showMessageDialog(null, "Yey, du hast den zweiten Knopf gedrückt!", "Gut gemacht", JOptionPane.INFORMATION_MESSAGE);
+        System.out.println("Button 'Zug reparieren' wurde gedrückt!");
+        JOptionPane.showMessageDialog(null, "Diese Funktion ist noch nicht verfügbar.", "Fehler", JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        System.out.println("Button 3 wurde gedrückt!");
-        JOptionPane.showMessageDialog(null, "Du hast es gewagt, den 'Drück mich nicht' Knopf zu drücken..", "NANANA", JOptionPane.ERROR_MESSAGE);
-        System.exit(0);
+        System.out.println("Button 'Einstellungen' wurde gedrückt!");
+        JOptionPane.showMessageDialog(null, "Diese Funktion ist noch nicht verfügbar.", "Fehler", JOptionPane.ERROR_MESSAGE);
+       
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+       System.out.println("Button 'Zug entfernen' wurde gedrückt!");
+        JOptionPane.showMessageDialog(null, "Diese Funktion ist noch nicht verfügbar.", "Fehler", JOptionPane.ERROR_MESSAGE);  
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        System.out.println("Button 'Zug hinzufügen' wurde gedrückt!");
+        JOptionPane.showMessageDialog(null, "Diese Funktion ist noch nicht verfügbar.", "Fehler", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        System.out.println("Button 'Musik an/aus' wurde gedrückt!");
+        JOptionPane.showMessageDialog(null, "Diese Funktion ist noch nicht verfügbar.", "Fehler", JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -201,6 +237,7 @@ public class TestGUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
